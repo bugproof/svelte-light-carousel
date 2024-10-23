@@ -135,9 +135,9 @@ export const dragScroll = (
 			}
 			autoPlayTimeout = setInterval(() => {
 				if (currentSlide + slidesPerView - 1 < slideCount - 1) {
-					scrollTo(currentSlide + 1);
+					navigate(currentSlide + 1);
 				} else {
-					scrollTo(0);
+					navigate(0);
 				}
 			}, autoPlay * 1000);
 		}
