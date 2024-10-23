@@ -18,10 +18,6 @@ bun add svelte-light-carousel
 </script>
 
 <Carousel {slides}>
-	<div slot="slide" let:slide>{slide.title}</div>
-</Carousel>
-
-<Carousel {slides}>
 	{#snippet slide({ slide })}
 		{slide.title}
 	{/snippet}
