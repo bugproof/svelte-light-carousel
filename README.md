@@ -6,6 +6,7 @@ A lightweight carousel component for Svelte focused on low runtime and minimalis
 npm i svelte-light-carousel
 pnpm add svelte-light-carousel
 yarn add svelte-light-carousel
+bun add svelte-light-carousel
 ```
 
 ## Usage
@@ -18,6 +19,12 @@ yarn add svelte-light-carousel
 
 <Carousel {slides}>
 	<div slot="slide" let:slide>{slide.title}</div>
+</Carousel>
+
+<Carousel {slides}>
+	{#snippet slide({ slide })}
+		{slide.title}
+	{/snippet}
 </Carousel>
 ```
 
