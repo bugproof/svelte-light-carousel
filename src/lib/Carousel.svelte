@@ -1,7 +1,6 @@
-<script lang="ts">
+<script lang="ts" generics="Slide">
 	import type { Snippet } from 'svelte';
 
-	type Slide = $$Generic;
 	type ButtonsA11y = {
 		a11y: {
 			'aria-controls': string;
